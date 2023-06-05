@@ -1,9 +1,10 @@
 package methodsOfWebElement;
 
-import java.awt.Rectangle;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,20 +21,18 @@ public class GetRectMethod {
 
 		WebElement button = driver.findElement(By.xpath("//button[text()=' Login ']"));
 		
-		Rectangle rect = button.getRect();
-		
-		// get the Location of WebElemet
-		
-		int xaxis = rect.getX();
-		int yaxis = rect.getY();
-		
-		System.out.println(" x axis :"+xaxis+"  Y axis :"+yaxis);
-		
-		// get the height & width of webelement
-		int h = rect.getHeight();
-		int w = rect.getWidth();
-		System.out.println("Height :"+h+"  Width :"+w);
-		
-	}
+		 Rectangle rect = button.getRect();
+		 //get the Location of webElement
+		 
+		 int xaxis=rect.getX();
+		 int yaxis=rect.getY();
+		 
+		 System.out.println(" x axis :"+xaxis+"  Y axis :"+yaxis);
+		 
+		 //get the height&width of webElement
+		 int h=rect.getHeight();
+		 int w=rect.getWidth();
+		 System.out.println("Height :"+h+"  Width :"+w);
+		}
 
 }

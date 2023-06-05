@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testNGPackage2.Test1firefox">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- testNGPackage2.Test1firefox -->
+      <class name="testNGPackage2.Test3">
+        <methods>
+          <include name="test3Method"/>
+        </methods>
+      </class> <!-- testNGPackage2.Test3 -->
+      <class name="testNGAnnotations.GoogleSearchTestCase">
+        <methods>
+          <include name="serach3"/>
+          <include name="search2"/>
+          <include name="search1"/>
+          <include name="propertyMethod"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testNGAnnotations.GoogleSearchTestCase -->
+      <class name="testNGPackage2.Test3Firefox">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- testNGPackage2.Test3Firefox -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

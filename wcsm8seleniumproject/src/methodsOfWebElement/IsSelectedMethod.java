@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class IsSelectedMethod {
@@ -16,7 +17,7 @@ public class IsSelectedMethod {
 
 		driver.get("http://desktop-aigvo6j/login.do");
 
-		WebElement checkBox = driver.findElement(By.name("remember"));
+		 WebElement checkBox = driver.findElement(By.name("remember"));
 		
 		boolean verify = checkBox.isSelected();
 		
